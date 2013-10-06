@@ -763,4 +763,6 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static boolean getBreathEnabled(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         return prefs.getBoolean(MessagingPreferenceActivity.NOTIFICATION_BREATH, false);
+    }
+    
 }
