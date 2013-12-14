@@ -168,11 +168,13 @@ public class QuickMessagePopup extends Activity implements
         mFullTimestamp = prefs.getBoolean(MessagingPreferenceActivity.FULL_TIMESTAMP, false);
         mCloseClosesAll = prefs.getBoolean(MessagingPreferenceActivity.QM_CLOSE_ALL_ENABLED, false);
         mWakeAndUnlock = prefs.getBoolean(MessagingPreferenceActivity.QM_LOCKSCREEN_ENABLED, false);
-        mDarkTheme = prefs.getBoolean(MessagingPreferenceActivity.QM_DARK_THEME_ENABLED, false);
         mUnicodeStripping = prefs.getInt(MessagingPreferenceActivity.UNICODE_STRIPPING_VALUE,
                 MessagingPreferenceActivity.UNICODE_STRIPPING_LEAVE_INTACT);
         mInputMethod = Integer.parseInt(prefs.getString(MessagingPreferenceActivity.INPUT_TYPE,
                 Integer.toString(InputType.TYPE_TEXT_VARIATION_SHORT_MESSAGE)));
+
+        mDarkTheme = mContext.getResources().getConfiguration().uiThemeMode
+                == Configuration.UI_THEME_MODE_HOLO_DARK;
 
         // Set the window features and layout
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -764,12 +766,7 @@ public class QuickMessagePopup extends Activity implements
 
             // Load the layout to be used
             LayoutInflater inflater = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View layout;
-            if (mDarkTheme) {
-                layout = inflater.inflate(R.layout.quickmessage_content_dark, null);
-            } else {
-                layout = inflater.inflate(R.layout.quickmessage_content_light, null);
-            }
+            View layout = inflater.inflate(R.layout.quickmessage_content_light, null);
 
             // Load the main views
             EditText qmReplyText = (EditText) layout.findViewById(R.id.embedded_text_editor);

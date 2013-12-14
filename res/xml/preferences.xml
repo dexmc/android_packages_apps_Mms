@@ -150,12 +150,10 @@
 
        <CheckBoxPreference
             android:key="pref_key_enable_privacy_mode"
-            android:layout="?android:attr/preferenceLayoutChild"
             android:dependency="pref_key_enable_notifications"
             android:defaultValue="false"
             android:title="@string/pref_title_notification_privacy_mode_enabled"
             android:summary="@string/pref_summary_notification_privacy_mode_enabled" />
-
 
         <RingtonePreference
             android:key="pref_key_ringtone"
@@ -190,12 +188,6 @@
     <!-- QuickMessage settings -->
     <PreferenceCategory android:title="@string/pref_quickmessage">
         <CheckBoxPreference
-            android:key="pref_dark_theme"
-            android:title="@string/pref_dark_theme_title"
-            android:summary="@string/pref_dark_theme_summary"
-            android:defaultValue="false" />
-
-        <CheckBoxPreference
             android:key="pref_key_quickmessage"
             android:title="@string/pref_quickmessage_title"
             android:dependency="pref_key_enable_notifications"
@@ -206,7 +198,6 @@
             android:key="pref_key_qm_lockscreen"
             android:title="@string/pref_wake_unlock_title"
             android:summary="@string/pref_wake_unlock_summary"
-            android:layout="?android:attr/preferenceLayoutChild"
             android:dependency="pref_key_quickmessage"
             android:defaultValue="false" />
 
@@ -214,7 +205,6 @@
             android:key="pref_key_close_all"
             android:title="@string/pref_close_all_title"
             android:summary="@string/pref_close_all_summary"
-            android:layout="?android:attr/preferenceLayoutChild"
             android:dependency="pref_key_quickmessage"
             android:defaultValue="false" />
     </PreferenceCategory>
