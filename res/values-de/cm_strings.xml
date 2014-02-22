@@ -108,4 +108,6 @@
     <string name="pref_mms_notification_vibrate_long_vib">Lang</string>
     <string name="pref_mms_notification_vibrate_mult_short">Mehrmals kurz</string>
     <string name="pref_mms_notification_vibrate_mult_long">Mehrmals lang</string>
+    <string name="sms_breath">Animiertes SMS Symbol</string>
+    <string name="sms_breath_summary">Das Symbol der SMS Benachrichtigung in der Statusleise animiert darstellen.</string>
 </resources>
