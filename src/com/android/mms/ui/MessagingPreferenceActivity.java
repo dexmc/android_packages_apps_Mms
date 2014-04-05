@@ -39,6 +39,7 @@ import android.preference.PreferenceScreen;
 import android.preference.RingtonePreference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.provider.SearchRecentSuggestions;
+import android.provider.Settings;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.view.Menu;
@@ -685,6 +686,13 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             PreferenceManager.getDefaultSharedPreferences(context).edit();
         editor.putBoolean(MessagingPreferenceActivity.QM_CLOSE_ALL_ENABLED, enabled);
         editor.apply();
+    }
+
+    public static boolean getSmartCallEnabled(Context context) {
+        int enabled = Settings.System.getInt(context.getContentResolver(),
+                          Settings.System.SMART_PHONE_CALLER, 0);
+        boolean smartCallEnabled = (enabled != 0);
+        return smartCallEnabled;
     }
 
     private void registerListeners() {
