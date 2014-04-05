@@ -110,4 +110,10 @@
     <string name="pref_mms_notification_vibrate_mult_long">Mehrmals lang</string>
     <string name="sms_breath">Animiertes SMS Symbol</string>
     <string name="sms_breath_summary">Das Symbol der SMS Benachrichtigung in der Statusleise animiert darstellen.</string>
+    
+    <!-- Message Font size -->
+    <string name="pref_title_mms_message_font_size">Schriftgröße der Nachrichten</string>
+    <string name="pref_summary_mms_message_font_size">Ändert die Schriftgröße in der Nachrichtenansicht</string>
+    <string name="pref_dialogtitle_mms_message_font_size">Schriftgröße auswählen</string>
+     
 </resources>
