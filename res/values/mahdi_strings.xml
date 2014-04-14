@@ -184,4 +184,10 @@
     <string name="pref_summary_mms_message_font_size">Change font size of message view</string>
     <string name="pref_dialogtitle_mms_message_font_size">Select font size</string>
 
+    <!-- Menu item - Insert smiley -->
+    <string name="menu_insert_smiley">Insert smiley</string>
+
+    <!-- Enable emoticons -->
+    <string name="pref_title_enable_emoticons">Emoticons support</string>
+    <string name="pref_summary_enable_emoticons">Substitute text emoticons with graphical equivalents</string>
 </resources>
