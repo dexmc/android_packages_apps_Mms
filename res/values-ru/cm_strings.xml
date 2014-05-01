@@ -107,4 +107,9 @@
     <string name="pref_mms_notification_vibrate_long_vib">Длинная вибрация</string>
     <string name="pref_mms_notification_vibrate_mult_short">Несколько коротких</string>
     <string name="pref_mms_notification_vibrate_mult_long">Несколько длинных</string>
+    <string name="pref_title_mms_message_font_size">Размер шрифта</string>
+    <string name="pref_summary_mms_message_font_size">Изменение размера шрифта в режиме просмотра</string>
+    <string name="pref_dialogtitle_mms_message_font_size">Выберите размер шрифта</string>
+    <string name="sms_breath">\"Живые\" SMS</string>
+    <string name="sms_breath_summary">Придаст вашим SMS-уведомлениям эффект дыхания в строке состояния.</string>
 </resources>
