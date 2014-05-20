@@ -109,4 +109,22 @@
     <string name="pref_mms_notification_vibrate_long_vib">Vibrazione lunga</string>
     <string name="pref_mms_notification_vibrate_mult_short">Ripetute e brevi</string>
     <string name="pref_mms_notification_vibrate_mult_long">Ripetute e lunghe</string>
-</resources>
+     
+    <!-- Message Font size -->
+    <string name="pref_title_mms_message_font_size">Grandezza font</string>
+    <string name="pref_summary_mms_message_font_size">Cambia la grandezza del font</string>
+    <string name="pref_dialogtitle_mms_message_font_size">Seleziona la grandezza del font</string>
+    
+    <!-- Breathing Notifications -->
+    <string name="sms_breath">SMS lampeggianti</string>
+    <string name="sms_breath_summary">Darà ai tuoi SMS un effetto lampeggiante nella barra di notifica.</string>
+    
+    <!-- Context menu item on a message for marking as unread -->
+    <string name="menu_as_unread">Segna come non letto</string>
+    <!-- Confirm Mark as unread -->
+    <string name="confirm_mark_unread_dialog_title">Segnare come non letto?</string>
+    <string name="confirm_mark_unread_conversation">La conversazione sarà segnata come non letta.</string>
+    <!-- Mark all threads confirmation dialog message -->
+    <string name="confirm_mark_unread_all_conversations">Tutte le conversazioni saranno segnate come non lette.</string>
+         
+    </resources>
