@@ -85,6 +85,7 @@ public class PhoneNumber implements Comparable<PhoneNumber> {
     private ArrayList<Group> mGroups;
     private boolean mIsChecked;
     private String mSectionIndex;
+    private Contact mContact;
 
     private PhoneNumber(Context context, Cursor c, String sectionIndex) {
         mId = c.getLong(COLUMN_ID);
@@ -133,6 +134,13 @@ public class PhoneNumber implements Comparable<PhoneNumber> {
 
     public long getContactId() {
         return mContactId;
+    }
+
+
+    public void cacheContact() {
+        if (mContact == null) {
+            mContact = Contact.get(mNumber, false);
+        }
     }
 
     public ArrayList<Group> getGroups() {
