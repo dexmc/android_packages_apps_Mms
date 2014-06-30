@@ -126,5 +126,11 @@
     <string name="confirm_mark_unread_conversation">La conversazione sarà segnata come non letta.</string>
     <!-- Mark all threads confirmation dialog message -->
     <string name="confirm_mark_unread_all_conversations">Tutte le conversazioni saranno segnate come non lette.</string>
-         
-    </resources>
+    
+    <!-- Menu item - Insert smiley -->
+    <string name="menu_insert_smiley">Inserisci emoticon</string>
+
+    <!-- Enable emoticons -->
+    <string name="pref_title_enable_emoticons">Supporto emoticon</string>
+    <string name="pref_summary_enable_emoticons">Sostituisci le faccine con i loro equivalenti garfici</string>
+</resources>
